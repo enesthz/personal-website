@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster+Two:ital@1&display=swap');
+
+.headerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10.63rem;
+    height: 8.18rem;
+    background-color: #536162;
+}
+
+.headerNameText{
+    font-size: 40px;
+    font-family: 'Lobster Two', cursive;
+    color: white;
+}
+
+.headerLinkContainer{
+    display: flex;
+    gap: 10.63rem;
+}
+
+.headerLink:link{
+    color: white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.headerLink:visited{
+    color: white;
+}
