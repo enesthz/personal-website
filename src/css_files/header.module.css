@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster+Two:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poiret+One&display=swap');
 
 .headerContainer{
     display: flex;
@@ -6,13 +6,13 @@
     align-items: center;
     gap: 10.63rem;
     height: 8.18rem;
-    background-color: #536162;
+    background-color: #222831;
 }
 
 .headerNameText{
-    font-size: 40px;
-    font-family: 'Lobster Two', cursive;
-    color: white;
+    font-size: 1.875rem;
+    font-family: 'Poiret One', cursive;
+    color: #e0e0e0;
 }
 
 .headerLinkContainer{
@@ -20,12 +20,19 @@
     gap: 10.63rem;
 }
 
+
 .headerLink:link{
-    color: white;
+    color: #e0e0e0;
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
 }
 
+
 .headerLink:visited{
-    color: white;
+    color: #e0e0e0;
+}
+
+.headerLink:hover{
+    color: #00ADB5
 }
