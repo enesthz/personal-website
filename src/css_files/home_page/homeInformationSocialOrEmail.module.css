@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.entityContainer{
+    display: flex;
+    align-items: center;
+    gap: 0.5625rem;
+}
+
+.socialOrMail{
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #222831;
+    white-space: nowrap;
+}
