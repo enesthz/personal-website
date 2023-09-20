@@ -16,9 +16,9 @@ function Header() {
         <Link className={styles.headerLink} href={'/projects'}>
           PROJECTS
         </Link>
-        <Link className={styles.headerLink} href={'/cv'}>
+        <a className={styles.headerLink} href={'/CV.pdf'} download>
           CV
-        </Link>
+        </a>
       </div>
     </div>
   );
