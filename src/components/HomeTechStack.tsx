@@ -18,7 +18,7 @@ function HomeTechStack() {
   return (
     <div className={styles.techStackBoardContainer}>
       <div className={styles.techStackContainer}>
-        <div className={styles.techStackColumn}>
+        <div className={styles.techStackColumn + ' ' + styles.techStackColumn1}>
           <HomeTechStackTechEntity techName={'React.js'}>
             <FaReact color={'#1E1E1E'} size={'4.718rem'} />
           </HomeTechStackTechEntity>
@@ -29,7 +29,7 @@ function HomeTechStack() {
             <SiStyledcomponents color={'#1E1E1E'} size={'4.718rem'} />
           </HomeTechStackTechEntity>
         </div>
-        <div className={styles.techStackColumn}>
+        <div className={styles.techStackColumn + ' ' + styles.techStackColumn2}>
           <HomeTechStackTechEntity techName={'Typescript'}>
             <BiLogoTypescript color={'#1E1E1E'} size={'4.718rem'} />
           </HomeTechStackTechEntity>
@@ -40,7 +40,7 @@ function HomeTechStack() {
             <SiNextdotjs color={'1E1E1E'} size={'4.718rem'} />
           </HomeTechStackTechEntity>
         </div>
-        <div className={styles.techStackColumn}>
+        <div className={styles.techStackColumn + ' ' + styles.techStackColumn3}>
           <HomeTechStackTechEntity techName={'Prettier'}>
             <SiPrettier color={'1E1E1E'} size={'4.718rem'} />
           </HomeTechStackTechEntity>
