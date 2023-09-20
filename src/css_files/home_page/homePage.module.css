@@ -1,0 +1,7 @@
+.homePage{
+    display: flex;
+    gap: 2.8425rem;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 8.18rem);
+}
