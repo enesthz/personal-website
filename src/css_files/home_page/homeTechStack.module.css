@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+@keyframes techStackOpacity{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.techStackBoardContainer{
+    display: flex;
+    flex-direction: column;
+    width: 53rem;
+    background-color: #515864;
+    border: 10px solid #007c83;
+    border-radius: 37px;
+}
+
+.techStackBoardContainer::before{
+    font-size: 1.37rem;
+    display: flex;
+    content: "TECH STACK";
+    background-color: #222831;
+    color: #e0e0e0;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    height: 2.5em;
+    align-items: center;
+    padding-left: 3rem;
+    border: 1px solid #1E1E1E;
+    border-radius: 28px 28px 0px 0px;
+}
+
+.techStackContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+}
+
+
+.techStackColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    opacity: 0;
+}
+
+.techStackColumn1{
+    animation: techStackOpacity 2s ease-in-out 1 normal;
+    animation-fill-mode: forwards;
+}
+
+.techStackColumn2{
+    animation: techStackOpacity 2s ease-in-out 1 normal;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.techStackColumn3{
+    animation: techStackOpacity 2s ease-in-out 1 normal;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}

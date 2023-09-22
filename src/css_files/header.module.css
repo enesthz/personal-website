@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poiret+One&display=swap');
+
+.headerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10.63rem;
+    height: 8.18rem;
+    background-color: #222831;
+}
+
+.headerNameText{
+    font-size: 1.875rem;
+    font-family: 'Poiret One', cursive;
+    color: #e0e0e0;
+}
+
+.headerLinkContainer{
+    display: flex;
+    gap: 10.63rem;
+}
+
+
+.headerLink:link{
+    color: #e0e0e0;
+    text-decoration: none;
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+}
+
+
+.headerLink:visited{
+    color: #e0e0e0;
+}
+
+.headerLink:hover{
+    color: #00ADB5
+}
