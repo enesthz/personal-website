@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poiret+One&display=swap');
+
+@keyframes aboutPageOpacity {
+    from {opacity: 0;}
+    to {opacity: 100;}
+}
+
+.aboutPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5.9375rem;
+}
+
+.aboutPage div{
+    width: 54.4375rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    gap: 1rem;
+    animation: aboutPageOpacity 2s ease-in-out 1 normal;
+    animation-fill-mode: forwards;
+}
+
+.aboutPageDescription{
+    opacity: 0;
+    width: 54.4375rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+    animation: aboutPageOpacity 2s ease-in-out 1 normal;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.aboutPageDescription span{
+    font-weight: bold;
+    color: #239ec4
+}
