@@ -5,3 +5,11 @@
     justify-content: center;
     height: calc(100vh - 8.18rem);
 }
+
+@media screen and (max-width:600px) {
+    .homePage{
+        flex-direction: column;
+        margin-top: 4rem;
+        height: auto;
+    }
+}

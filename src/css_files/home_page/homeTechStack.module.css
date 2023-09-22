@@ -5,6 +5,7 @@
     to {opacity: 1;}
 }
 
+
 .techStackBoardContainer{
     display: flex;
     flex-direction: column;
@@ -58,4 +59,23 @@
     animation: techStackOpacity 2s ease-in-out 1 normal;
     animation-delay: 2s;
     animation-fill-mode: forwards;
+}
+
+
+@media screen and (max-width:600px){
+    .techStackBoardContainer{
+        width: 20rem;
+        order: 1;
+        margin-bottom: 2rem;
+    }
+
+    .techStackContainer{
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .techStackColumn{
+        animation: techStackOpacity 2s ease-in-out 1 normal;
+        animation-fill-mode: forwards;
+    }
 }
