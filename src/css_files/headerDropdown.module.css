@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poiret+One&display=swap');
+
+@keyframes dropdownStretch{
+    from {height: 0px}
+    to {height: 12rem;}
+}
+
+.headerDropdown{
+    position: relative;
+}
+
+.headerDropdownMenu{
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    top: 2rem;
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    gap: 1em;
+    width: 7.5rem;
+    right: 0rem;
+    align-items: center;
+    border: 2px solid #222831;
+    border-radius: 13px;
+    z-index: 1;
+    user-select: none;
+    animation: dropdownStretch 0.4s ease-in-out 1 normal;
+}
+
+.headerDropdownMenu a:nth-child(1){
+    margin-top: 0.75rem;
+    
+}
+
+.headerDropdownMenu a:last-child{
+    margin-bottom: 0.75rem;
+} 
+
+.headerDropdownMenu a:link{
+    color: #222831;
+    text-decoration: none;
+}
+
+.headerDropdownMenu a:visited{
+    color: #222831;
+}
+
+
+.headerDropdownMenu a:hover{
+    color:#00ADB5;
+}
