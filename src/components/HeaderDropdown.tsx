@@ -16,13 +16,16 @@ function HeaderDropdown({ dropdownListItems }: { dropdownListItems: string[] }) 
     }
   }
 
-  const dropdownList = dropdownListItems.map((item) => {
+  const dropdownList = dropdownListItems.map((item, index) => {
     return item !== 'cv' ? (
-      <Link className={styles.headerDropdownLinks} href={`/${item !== 'home' ? item : ''}`}>
+      <Link
+        key={index}
+        className={styles.headerDropdownLinks}
+        href={`/${item !== 'home' ? item : ''}`}>
         {item}
       </Link>
     ) : (
-      <a href='/CV.pdf' download>
+      <a key={index} href='/CV.pdf' download>
         CV
       </a>
     );
