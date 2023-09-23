@@ -36,3 +36,13 @@
 .headerLink:hover{
     color: #00ADB5
 }
+
+@media screen and (min-width:601px) and (max-width: 768px){
+    .headerContainer{
+        gap: 3rem;
+    }   
+
+    .headerLinkContainer{
+        gap: 3rem;
+    }
+}

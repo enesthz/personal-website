@@ -79,3 +79,15 @@
         animation-fill-mode: forwards;
     }
 }
+
+@media screen and (min-width: 601px) and (max-width: 768px){
+    .techStackBoardContainer{
+        order:1;
+        width: 85%;
+        margin-bottom: 2rem;
+    }
+    
+    .techStackColumn{
+        font-size: 0.75rem;
+    }
+}
