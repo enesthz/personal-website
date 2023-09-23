@@ -20,35 +20,35 @@ function HomeTechStack() {
       <div className={styles.techStackContainer}>
         <div className={styles.techStackColumn + ' ' + styles.techStackColumn1}>
           <HomeTechStackTechEntity techName={'React.js'}>
-            <FaReact color={'#1E1E1E'} size={'4.718rem'} />
+            <FaReact color={'#1E1E1E'} size={'4.718em'} />
           </HomeTechStackTechEntity>
           <HomeTechStackTechEntity techName={'Redux Toolkit'}>
-            <BiLogoRedux color={'#1E1E1E'} size={'4.718rem'} />
+            <BiLogoRedux color={'#1E1E1E'} size={'4.718em'} />
           </HomeTechStackTechEntity>
           <HomeTechStackTechEntity techName={'styled-components'}>
-            <SiStyledcomponents color={'#1E1E1E'} size={'4.718rem'} />
+            <SiStyledcomponents color={'#1E1E1E'} size={'4.718em'} />
           </HomeTechStackTechEntity>
         </div>
         <div className={styles.techStackColumn + ' ' + styles.techStackColumn2}>
           <HomeTechStackTechEntity techName={'Typescript'}>
-            <BiLogoTypescript color={'#1E1E1E'} size={'4.718rem'} />
+            <BiLogoTypescript color={'#1E1E1E'} size={'4.718em'} />
           </HomeTechStackTechEntity>
           <HomeTechStackTechEntity techName={'Jest'}>
-            <SiJest color={'1E1E1E'} size={'4.718rem'} />
+            <SiJest color={'1E1E1E'} size={'4.718em'} />
           </HomeTechStackTechEntity>
           <HomeTechStackTechEntity techName={'Next.js'}>
-            <SiNextdotjs color={'1E1E1E'} size={'4.718rem'} />
+            <SiNextdotjs color={'1E1E1E'} size={'4.718em'} />
           </HomeTechStackTechEntity>
         </div>
         <div className={styles.techStackColumn + ' ' + styles.techStackColumn3}>
           <HomeTechStackTechEntity techName={'Prettier'}>
-            <SiPrettier color={'1E1E1E'} size={'4.718rem'} />
+            <SiPrettier color={'1E1E1E'} size={'4.718em'} />
           </HomeTechStackTechEntity>
           <HomeTechStackTechEntity techName={'ESLint'}>
-            <SiEslint color={'1E1E1E'} size={'4.718rem'} />
+            <SiEslint color={'1E1E1E'} size={'4.718em'} />
           </HomeTechStackTechEntity>
           <HomeTechStackTechEntity techName={'npm'}>
-            <SiNpm color={'1E1E1E'} size={'4.718rem'} />
+            <SiNpm color={'1E1E1E'} size={'4.718em'} />
           </HomeTechStackTechEntity>
         </div>
       </div>
