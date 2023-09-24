@@ -10,6 +10,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 5.9375rem;
+    width: 100vw;
 }
 
 .aboutPage div{
@@ -31,9 +32,28 @@
     animation: aboutPageOpacity 2s ease-in-out 1 normal;
     animation-delay: 1s;
     animation-fill-mode: forwards;
+    margin: 0px 2rem 2rem;
 }
 
 .aboutPageDescription span{
     font-weight: bold;
     color: #239ec4
+}
+
+@media screen and (max-width:968px){
+    .aboutPageDescription{
+        width: fit-content;
+    }
+
+    .aboutPage div{
+        font-size: 2.18rem;
+        width: max-content;
+        margin: 0px auto 0px 2rem;
+    }
+}
+
+@media screen and (max-width:375px){
+    .aboutPage div{
+        font-size: 2rem;
+    }
 }
