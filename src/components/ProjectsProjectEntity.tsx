@@ -1,8 +1,9 @@
 'use client';
 
-import Image from 'next/image';
 import { useState } from 'react';
 import styles from 'src/css_files/projects_page/projectsProjectEntity.module.css';
+
+const breakpoint869 = window.matchMedia('(max-width:869px)');
 
 function ProjectsProjectEntity({
   projectName,
@@ -11,7 +12,14 @@ function ProjectsProjectEntity({
   projectName: string;
   children: React.ReactNode;
 }) {
-  const [isTimeDone, setIsTimeDone] = useState(false);
+  const [isTimeDone, setIsTimeDone] = useState<boolean>(false);
+
+  function handleScreensizeChange(event: MediaQueryListEvent) {
+    if (!event.matches) {
+      setIsTimeDone(false);
+    }
+  }
+  breakpoint869.addEventListener('change', handleScreensizeChange);
 
   setTimeout(() => {
     setIsTimeDone(true);
@@ -20,7 +28,7 @@ function ProjectsProjectEntity({
   return (
     <div className={styles.projectsProjectEntity}>
       <p className={styles.projectName}>{projectName}</p>
-      {isTimeDone && children}
+      {(breakpoint869.matches || isTimeDone) && children}
     </div>
   );
 }
