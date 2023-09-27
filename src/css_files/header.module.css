@@ -56,3 +56,9 @@
         gap: 7rem;
     }
 }
+
+@media screen and (max-width: 381px) {
+    .headerContainer{
+        gap: 7rem;
+    }
+}
