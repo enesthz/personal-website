@@ -35,7 +35,7 @@ function ProjectsProjectEntity({
   return (
     <div className={styles.projectsProjectEntity}>
       <p className={styles.projectName}>{projectName}</p>
-      {(breakpoint869.matches || isTimeDone) && children}
+      {((breakpoint869.matches !== undefined && breakpoint869.matches) || isTimeDone) && children}
     </div>
   );
 }
