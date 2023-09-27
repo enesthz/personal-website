@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poiret+One&display=swap');
+
+@keyframes slidingProjectName{
+    from {
+        width: 15.0625rem;
+        gap: 0px;
+    }
+
+    to{
+        width: 45.5rem;
+        gap: 5rem;
+    }
+}
+
+@keyframes opacityDescription {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.projectsProjectEntity{
+    display: flex;
+    align-items: center;
+    height: 13.416875rem;
+    animation: slidingProjectName 2s ease-in-out 0.2s 1 normal forwards;
+}
+
+.projectName{
+    font-family: 'Poiret One', cursive;    
+    white-space: nowrap;
+    font-weight: bolder;
+    font-size: 1.875rem;
+    width: 15.0625rem;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    color:#222831;
+}
+
+.projectsProjectEntity p:nth-child(2){
+    font-family: "Lato", sans-serif;
+    font-size: 1.22rem;
+    width: fit-content;
+    animation: opacityDescription 1.5s ease-in-out 1 normal forwards;
+}
+
+.projectsProjectEntity p:nth-child(2) span{
+    font-weight: bold;
+    color: #2E8BCE
+}
