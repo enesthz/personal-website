@@ -19,7 +19,7 @@ function ProjectsProjectEntity({
   const [isTimeDone, setIsTimeDone] = useState<boolean>(false);
 
   function handleScreensizeChange(event: MediaQueryListEvent) {
-    if (!event.matches) {
+    if (!(event !== undefined && event.matches)) {
       setIsTimeDone(false);
     }
   }
