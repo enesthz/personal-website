@@ -12,7 +12,7 @@
     }
 }
 
-@keyframes opacityDescription {
+@keyframes opacityAnimation {
     from{
         opacity: 0;
     }
@@ -27,6 +27,7 @@
     align-items: center;
     height: 13.416875rem;
     animation: slidingProjectName 2s ease-in-out 0.2s 1 normal forwards;
+    margin: 0px 2rem;
 }
 
 .projectName{
@@ -45,10 +46,22 @@
     font-family: "Lato", sans-serif;
     font-size: 1.22rem;
     width: fit-content;
-    animation: opacityDescription 1.5s ease-in-out 1 normal forwards;
+    animation: opacityAnimation 1.5s ease-in-out 1 normal forwards;
 }
 
 .projectsProjectEntity p:nth-child(2) span{
     font-weight: bold;
     color: #2E8BCE
+}
+
+
+@media screen and (max-width: 868px) {
+    .projectsProjectEntity{
+        flex-direction: column;
+        height: min-content;
+        max-width: 25rem;
+        width: fit-content;
+        gap: 1rem;
+        animation: opacityAnimation 2s ease-in-out 1 normal forwards;
+    }
 }
