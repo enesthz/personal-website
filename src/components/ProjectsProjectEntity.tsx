@@ -28,6 +28,16 @@ function ProjectsProjectEntity({
     breakpoint869.addEventListener('change', handleScreensizeChange);
   }
 
+  let childWillBeRendered: React.ReactNode;
+
+  if (breakpoint869 !== undefined) {
+    if ((breakpoint869.matches !== undefined && breakpoint869.matches) || isTimeDone) {
+      childWillBeRendered = children;
+    } else {
+      childWillBeRendered = false;
+    }
+  }
+
   setTimeout(() => {
     setIsTimeDone(true);
   }, 2000);
@@ -35,7 +45,7 @@ function ProjectsProjectEntity({
   return (
     <div className={styles.projectsProjectEntity}>
       <p className={styles.projectName}>{projectName}</p>
-      {((breakpoint869.matches !== undefined && breakpoint869.matches) || isTimeDone) && children}
+      {childWillBeRendered}
     </div>
   );
 }
