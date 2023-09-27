@@ -3,7 +3,11 @@
 import { useState } from 'react';
 import styles from 'src/css_files/projects_page/projectsProjectEntity.module.css';
 
-const breakpoint869 = window.matchMedia('(max-width:869px)');
+let breakpoint869: MediaQueryList;
+
+if (typeof window !== 'undefined') {
+  breakpoint869 = window.matchMedia('(max-width:869px)');
+}
 
 function ProjectsProjectEntity({
   projectName,
@@ -19,7 +23,7 @@ function ProjectsProjectEntity({
       setIsTimeDone(false);
     }
   }
-  breakpoint869.addEventListener('change', handleScreensizeChange);
+  breakpoint869!.addEventListener('change', handleScreensizeChange);
 
   setTimeout(() => {
     setIsTimeDone(true);

@@ -5,11 +5,15 @@ import styles from '../css_files/header.module.css';
 import HeaderDropdown from './HeaderDropdown';
 import { useState } from 'react';
 
-const breakpoint600 = window.matchMedia('(max-width:600px)');
+let breakpoint600: MediaQueryList;
+
+if (typeof window !== 'undefined') {
+  breakpoint600 = window.matchMedia('(max-width:600px)');
+}
 
 function Header() {
   const [isBreakpoint600Matched, setIsBreakpoint600Matched] = useState<boolean>(
-    breakpoint600.matches,
+    breakpoint600 !== undefined && breakpoint600.matches,
   );
 
   function handleScreensizeChange(event: MediaQueryListEvent) {
@@ -19,7 +23,7 @@ function Header() {
       setIsBreakpoint600Matched(false);
     }
   }
-  breakpoint600.addEventListener('change', handleScreensizeChange);
+  breakpoint600!.addEventListener('change', handleScreensizeChange);
 
   return (
     <div className={styles.headerContainer}>
