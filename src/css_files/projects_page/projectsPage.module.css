@@ -1,0 +1,8 @@
+.projectsPage{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+    height: calc(100vh - 8.18rem);
+    justify-content: center;
+}
