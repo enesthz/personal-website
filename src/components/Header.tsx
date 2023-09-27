@@ -23,7 +23,10 @@ function Header() {
       setIsBreakpoint600Matched(false);
     }
   }
-  breakpoint600!.addEventListener('change', handleScreensizeChange);
+
+  if (breakpoint600 !== undefined) {
+    breakpoint600.addEventListener('change', handleScreensizeChange);
+  }
 
   return (
     <div className={styles.headerContainer}>

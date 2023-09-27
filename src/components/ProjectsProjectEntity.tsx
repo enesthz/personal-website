@@ -23,7 +23,10 @@ function ProjectsProjectEntity({
       setIsTimeDone(false);
     }
   }
-  breakpoint869!.addEventListener('change', handleScreensizeChange);
+
+  if (breakpoint869 !== undefined) {
+    breakpoint869.addEventListener('change', handleScreensizeChange);
+  }
 
   setTimeout(() => {
     setIsTimeDone(true);
